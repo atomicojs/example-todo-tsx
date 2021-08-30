@@ -1,0 +1,7 @@
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: var(--token--box-gap);
+  padding-left: var(--token--box-gap);
+  align-items: flex-end;
+}

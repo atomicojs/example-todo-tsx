@@ -1,0 +1,13 @@
+label {
+  display: grid;
+  padding: 0.25rem 0.5rem;
+  grid-template-columns: auto 12fr;
+  grid-gap: 0.5rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+label:hover {
+  background-color: var(--token--secondary-light-1);
+  border-radius: calc(var(--token--box-radius) * 0.33);
+}

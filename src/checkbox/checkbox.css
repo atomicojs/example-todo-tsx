@@ -1,0 +1,29 @@
+:host {
+  position: relative;
+  display: inline-flex;
+}
+
+::slotted(input) {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: calc(var(--token--box-radius) * 0.33);
+  appearance: unset;
+  border: 2px solid var(--token--primary);
+  margin: auto;
+}
+
+::slotted(input:checked) {
+  background: var(--token--primary);
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+:host([checked]) .icon {
+  opacity: 1;
+}

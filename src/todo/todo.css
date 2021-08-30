@@ -1,0 +1,16 @@
+:host {
+  display: flex;
+  flex-flow: column nowrap;
+  color: var(--token--contrast);
+  border-radius: var(--token--box-radius);
+  background: var(--token--secondary);
+  min-height: 280px;
+}
+
+.tasks {
+  padding: 1rem 2.5rem;
+}
+
+.footer {
+  margin: auto 0px 0px;
+}

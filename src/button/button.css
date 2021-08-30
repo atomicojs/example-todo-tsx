@@ -1,0 +1,12 @@
+:host {
+  --radius: var(--token--box-radius);
+}
+
+::slotted(button) {
+  --size: var(--token--box-min-height);
+  width: var(--size);
+  height: var(--size);
+  background: var(--token--secondary-light-1);
+  border: none;
+  border-radius: var(--radius);
+}
