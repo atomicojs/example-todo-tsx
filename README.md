@@ -16,9 +16,9 @@ Now what you have installed is a quick start kit based on Vite, which you can sc
 2. `npm start` : Initialize the development server
 3. `npm build` : Optional, Generate a build of your project from the html file [index.html](index.html).
 
-## Todo con TSX
+## Todo with TSX(Typescript)
 
-This is a small Todo created with Atomico that will allow you to know how it is with TSX (Typescript), I hope that with these examples you will understand:
+This is a small Todo created with Atomico that will allow you to know how it is with TSX(Typescript), I hope that with these examples you will understand:
 
 1. **Create components with effects on forms**: it is normal that when starting with webcomponents you cannot reflect your events to forms, in this example I show you how to solve this in an elegant way.
 2. **Design token**: The design tokens are the variables of a design system, in this example I show you how to carry the token design in a sustainable way and without global conflicts.
