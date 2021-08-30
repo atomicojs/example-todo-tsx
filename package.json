@@ -14,7 +14,7 @@
   "private": true,
   "scripts": {
     "start": "vite",
-    "build": "vite build",
+    "build": "vite build --outDir docs --base /example-todo-tsx",
     "test": "wtr src/**/*.test.js --node-resolve",
     "exports": "exports src/components.js --exports --types --main components",
     "prepublishOnly": "npm run test && npm run exports"
