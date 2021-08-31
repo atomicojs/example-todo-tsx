@@ -15,9 +15,9 @@ function todoTask({ checked }: Props<typeof todoTask.props>) {
         */}
         <Checkbox
           checked={checked}
-          onchange={(event: DOMEvent<"change", HTMLInputElement>) =>
-            setChecked(event.target.checked)
-          }
+          onchange={(event: DOMEvent<"change", HTMLInputElement>) => {
+            setChecked(event.target.checked);
+          }}
         />
         <span>
           <slot></slot>
@@ -31,6 +31,16 @@ todoTask.props = {
   checked: {
     type: Boolean,
     reflect: true,
+    event: {
+      /**
+       * The native event of the form does not traverse the shadowDOM
+       * thanks to the following configuration we will emit a second event
+       * through the shadowDOM
+       */
+      type: "change",
+      bubbles: true,
+      composed: true,
+    },
   },
 };
 
