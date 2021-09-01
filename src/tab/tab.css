@@ -5,6 +5,7 @@ button {
   font-family: unset;
   height: calc(var(--token--box-min-height) * 0.75);
   position: relative;
+  cursor: pointer;
 }
 
 button:before {
