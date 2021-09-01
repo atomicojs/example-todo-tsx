@@ -3,6 +3,12 @@ import { Checkbox } from "../checkbox/checkbox";
 import tokens from "../tokens.css";
 import style from "./todo-task.css";
 
+/**
+ * This component has a special behavior, since
+ * use an input inside the shadowDOM, I have created this situation
+ * so that you know how to emit events automatically
+ * through the props
+ */
 function todoTask({ checked }: Props<typeof todoTask.props>) {
   const [, setChecked] = useProp("checked");
   return (
